@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import org.controlsfx.control.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="387.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sadp.pkg2.FXMLDocumentController">
+    <children>
+      <HBox prefHeight="80.0" prefWidth="343.0" style="-fx-background-color: cyan;">
+         <children>
+            <Label text="REGISTER" textFill="WHITE">
+               <font>
+                  <javafx.scene.text.Font name="System Bold" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <javafx.geometry.Insets left="90.0" top="12.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <VBox layoutY="79.0" prefHeight="338.0" prefWidth="343.0">
+         <children>
+            <TextField fx:id="userName" promptText="USERNAME">
+               <VBox.margin>
+                  <javafx.geometry.Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </TextField>
+            <TextField fx:id="userEmail" promptText="EMAIL">
+               <VBox.margin>
+                  <javafx.geometry.Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </TextField>
+            <PasswordField fx:id="userPassword" promptText="PASSWORD">
+               <VBox.margin>
+                  <javafx.geometry.Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </VBox.margin>
+            </PasswordField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="TOPICS:">
+                     <HBox.margin>
+                        <javafx.geometry.Insets left="20.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <VBox prefHeight="96.0" prefWidth="140.0">
+                     <children>
+                        <CheckBox fx:id="sportsTopic" mnemonicParsing="false" text="Sports">
+                           <VBox.margin>
+                              <javafx.geometry.Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="scienceTopic" mnemonicParsing="false" text="Science">
+                           <VBox.margin>
+                              <javafx.geometry.Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                        <CheckBox fx:id="healthTopic" mnemonicParsing="false" text="Health">
+                           <VBox.margin>
+                              <javafx.geometry.Insets left="20.0" top="10.0" />
+                           </VBox.margin>
+                        </CheckBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <Button fx:id="rmain" mnemonicParsing="false" onAction="#register" style="-fx-background-color: cyan;" text="Register">
+               <VBox.margin>
+                  <javafx.geometry.Insets left="130.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+            <HBox prefHeight="31.0" prefWidth="343.0">
+               <children>
+                  <Label text="If you have an account ">
+                     <font>
+                        <javafx.scene.text.Font size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <javafx.geometry.Insets left="170.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Button fx:id="rlogin" mnemonicParsing="false" onAction="#rloginButtonClicked" style="-fx-background-color: white;" text="Click Here" underline="true">
+                     <font>
+                        <javafx.scene.text.Font name="System Bold" size="10.0" />
+                     </font>
+                     <HBox.margin>
+                        <javafx.geometry.Insets top="6.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

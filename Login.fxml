@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="331.0" prefWidth="343.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sadp.pkg2.FXMLDocumentController">
+    <children>
+      <Pane fx:id="adminPane" layoutY="122.0" prefHeight="211.0" prefWidth="343.0" visible="false">
+         <children>
+            <VBox prefHeight="211.0" prefWidth="343.0">
+               <children>
+                  <TextField fx:id="adminName" promptText="USERNAME">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="adminPassword" promptText="PASSWORD">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="adminMain" mnemonicParsing="false" onAction="#adminLogin" style="-fx-background-color: cyan;" text="Login">
+                     <VBox.margin>
+                        <Insets left="135.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <HBox prefHeight="80.0" prefWidth="343.0" style="-fx-background-color: cyan;">
+         <children>
+            <Label text="LOGIN" textFill="#fffefe">
+               <font>
+                  <javafx.scene.text.Font name="System Bold" size="36.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="110.0" top="12.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutY="80.0" prefHeight="53.0" prefWidth="343.0">
+         <children>
+            <CheckBox fx:id="adminBox" mnemonicParsing="false" onAction="#showPane" text="ADMIN">
+               <HBox.margin>
+                  <Insets left="60.0" top="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <CheckBox fx:id="userBox" mnemonicParsing="false" onAction="#showPane" text="USER">
+               <HBox.margin>
+                  <Insets left="60.0" top="15.0" />
+               </HBox.margin>
+            </CheckBox>
+         </children>
+      </HBox>
+      <Pane fx:id="userPane" layoutY="122.0" prefHeight="211.0" prefWidth="343.0" visible="false">
+         <children>
+            <VBox prefHeight="211.0" prefWidth="343.0">
+               <children>
+                  <TextField fx:id="userName" promptText="USERNAME">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <PasswordField fx:id="userPassword" promptText="PASSWORD">
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Button fx:id="userMain" mnemonicParsing="false" onAction="#userLogin" style="-fx-background-color: cyan;" text="Login">
+                     <VBox.margin>
+                        <Insets left="135.0" />
+                     </VBox.margin>
+                  </Button>
+                  <HBox prefHeight="42.0" prefWidth="333.0">
+                     <children>
+                        <Label text="If you don't have an account ">
+                           <font>
+                              <javafx.scene.text.Font size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets left="140.0" top="20.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="lregister" mnemonicParsing="false" onAction="#lregisterButtonClicked" style="-fx-background-color: white;" text="Click Here" underline="true">
+                           <font>
+                              <javafx.scene.text.Font name="System Bold" size="10.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="16.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
